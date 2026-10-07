@@ -1,0 +1,8 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-twerkind-47c065fd-4987-4feb-af25-e331405c3cd5",
+      "rules": "firestore.rules"
+    }
+  ]
+}

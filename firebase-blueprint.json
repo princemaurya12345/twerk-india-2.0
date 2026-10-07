@@ -1,0 +1,36 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "description": "User profile, codename and language preferences",
+      "fields": {
+        "userId": { "type": "string" },
+        "displayName": { "type": "string" },
+        "codename": { "type": "string" },
+        "nativeLanguage": { "type": "string" },
+        "targetTranslationLanguage": { "type": "string" },
+        "selectedState": { "type": "string" },
+        "totalMatches": { "type": "number" },
+        "createdAt": { "type": "timestamp" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "ChatSession": {
+      "path": "users/{userId}/sessions/{sessionId}",
+      "description": "Cloud synchronized record of matched video and audio chat sessions",
+      "fields": {
+        "userId": { "type": "string" },
+        "partnerCodename": { "type": "string" },
+        "partnerLocation": { "type": "string" },
+        "partnerState": { "type": "string" },
+        "partnerLanguage": { "type": "string" },
+        "callType": { "type": "string" },
+        "durationSeconds": { "type": "number" },
+        "messageCount": { "type": "number" },
+        "lastMessage": { "type": "string" },
+        "lastTranslation": { "type": "string" },
+        "timestamp": { "type": "timestamp" }
+      }
+    }
+  }
+}
